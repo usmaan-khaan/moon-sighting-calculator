@@ -2,8 +2,8 @@ import express from 'express';
 import path from 'node:path';
 import fs from 'node:fs';
 import dotenv from 'dotenv';
-import { calculateMoonDetails } from './src/utils/astronomy';
-import { stationDate, stationTimeZone } from './src/utils/time';
+import { calculateMoonDetails } from './src/utils/astronomy.js';
+import { stationDate, stationTimeZone } from './src/utils/time.js';
 
 dotenv.config();
 export const app = express();

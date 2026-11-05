@@ -1,5 +1,5 @@
 import { Body, Observer, Equator, Horizon, Illumination, MoonPhase, SearchMoonPhase, SearchRiseSet, SunPosition, KM_PER_AU } from 'astronomy-engine';
-import { stationTimeZone, stationDate, zonedParts, formatTime } from './time';
+import { stationTimeZone, stationDate, zonedParts, formatTime } from './time.js';
 
 export interface ObserverLocation {
   latitude: number;

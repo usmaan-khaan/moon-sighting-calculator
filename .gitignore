@@ -13,3 +13,4 @@ coverage/
 /fixed-*.png
 /public/*.zip
 .vercel/
+/tests/.esm-check-*/
