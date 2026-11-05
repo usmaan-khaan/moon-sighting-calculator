@@ -4,6 +4,9 @@
   "buildCommand": "npm run build:web",
   "outputDirectory": "dist",
   "functions": {
-    "api/moon-commentary.ts": { "maxDuration": 15 }
+    "api/moon-commentary.js": {
+      "maxDuration": 15,
+      "includeFiles": ".server/**"
+    }
   }
 }

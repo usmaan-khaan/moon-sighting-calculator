@@ -53,4 +53,4 @@ See PROJECT_REVIEW.md for the correction summary and LIVE_TEST_REPORT.md for the
 
 ## Vercel hosting
 
-Import this GitHub repository in Vercel. The committed vercel.json selects Vite and builds only the web assets; api/moon-commentary.ts serves the existing validated Express advisory as a serverless function. No API key or environment secrets are required. The standalone npm start deployment continues to work.
+Import this GitHub repository in Vercel. The committed vercel.json selects Vite and builds the web assets plus a private server bundle; api/moon-commentary.js serves the existing validated Express advisory through a private CommonJS server bundle as a serverless function. No API key or environment secrets are required. The standalone npm start deployment continues to work.

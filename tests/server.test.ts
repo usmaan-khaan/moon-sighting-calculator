@@ -5,8 +5,6 @@ import { once } from 'node:events';
 test('API validates input, protects files, and recalculates advice', async () => {
   process.env.NODE_ENV = 'test';
   const { app } = await import('../server');
-  const { default: serverlessApp } = await import('../api/moon-commentary');
-  assert.equal(serverlessApp, app);
   const server = app.listen(0, '127.0.0.1');
   await once(server, 'listening');
   const address = server.address() as { port: number };

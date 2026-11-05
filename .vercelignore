@@ -3,6 +3,7 @@
 .env.*
 node_modules
 dist
+.server
 public
 browser-*.png
 live-*.png
