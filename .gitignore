@@ -1,0 +1,14 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Local browser evidence and the original downloadable source archive.
+/browser-*.png
+/live-*.png
+/fixed-*.png
+/public/*.zip

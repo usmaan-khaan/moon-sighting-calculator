@@ -1,0 +1,6 @@
+{
+  "name": "Moon Sighting Calculator",
+  "description": "Real-time astronomical calculations, crescent visibility assessments, and multi-lunar calendar synchronization.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

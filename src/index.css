@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-display: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    --font-celestial: 'Cinzel', serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #030712;
+    color: #F1F5F9;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Subtle starfield twinkle */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.9); }
+  50% { opacity: 0.9; transform: scale(1.1); }
+}
+
+.animate-twinkle-1 {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.animate-twinkle-2 {
+  animation: twinkle 4.5s ease-in-out infinite 1.5s;
+}
+
+.animate-twinkle-3 {
+  animation: twinkle 5s ease-in-out infinite 2.5s;
+}
+
+/* Tactile 3D Buttons */
+.btn-3d-amber {
+  background: linear-gradient(180deg, #FBBF24 0%, #D97706 100%);
+  border-top: 1px solid #FDE68A;
+  box-shadow: 0 4px 0 #92400E, 0 6px 14px rgba(217, 119, 6, 0.35);
+  color: #0F172A;
+  font-weight: 600;
+  transition: all 0.12s ease-in-out;
+}
+.btn-3d-amber:hover {
+  filter: brightness(1.06);
+}
+.btn-3d-amber:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #92400E, 0 2px 4px rgba(217, 119, 6, 0.25);
+}
+
+.btn-3d-slate {
+  background: linear-gradient(180deg, #1E293B 0%, #0F172A 100%);
+  border-top: 1px solid #334155;
+  box-shadow: 0 3px 0 #020617, 0 4px 8px rgba(0, 0, 0, 0.4);
+  color: #E2E8F0;
+  transition: all 0.12s ease-in-out;
+}
+.btn-3d-slate:hover {
+  background: linear-gradient(180deg, #28374D 0%, #151F33 100%);
+  color: #FFFFFF;
+}
+.btn-3d-slate:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #020617, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn-3d-blue {
+  background: linear-gradient(180deg, #38BDF8 0%, #0284C7 100%);
+  border-top: 1px solid #BAE6FD;
+  box-shadow: 0 3px 0 #0369A1, 0 4px 10px rgba(2, 132, 199, 0.35);
+  color: #FFFFFF;
+  transition: all 0.12s ease-in-out;
+}
+.btn-3d-blue:hover {
+  filter: brightness(1.06);
+}
+.btn-3d-blue:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #0369A1;
+}
+
+.btn-3d-emerald {
+  background: linear-gradient(180deg, #34D399 0%, #059669 100%);
+  border-top: 1px solid #A7F3D0;
+  box-shadow: 0 3px 0 #047857, 0 4px 10px rgba(5, 150, 105, 0.35);
+  color: #FFFFFF;
+  transition: all 0.12s ease-in-out;
+}
+.btn-3d-emerald:hover {
+  filter: brightness(1.06);
+}
+.btn-3d-emerald:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #047857;
+}
+
+.btn-3d-active {
+  background: linear-gradient(180deg, #F59E0B 0%, #B45309 100%);
+  border-top: 1px solid #FDE68A;
+  box-shadow: 0 2px 0 #78350F;
+  transform: translateY(1px);
+  color: #FFFFFF;
+}
