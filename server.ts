@@ -108,4 +108,4 @@ async function startServer() {
   }
   app.listen(Number(process.env.PORT) || 3000, '0.0.0.0', () => console.log('LunaSync server ready.'));
 }
-if (process.env.NODE_ENV !== 'test') startServer().catch(error => { console.error('Server startup failed:', error.message); process.exitCode = 1; });
+if (process.env.NODE_ENV !== 'test' && !process.env.VERCEL) startServer().catch(error => { console.error('Server startup failed:', error.message); process.exitCode = 1; });

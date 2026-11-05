@@ -12,3 +12,4 @@ coverage/
 /live-*.png
 /fixed-*.png
 /public/*.zip
+.vercel/

@@ -50,3 +50,7 @@ References:
 - https://griffithobservatory.lacity.gov/explore/observing-the-sky/whats-in-the-sky/the-moon/2026-phases-of-the-moon/
 
 See PROJECT_REVIEW.md for the correction summary and LIVE_TEST_REPORT.md for the pre-fix deployed-site baseline.
+
+## Vercel hosting
+
+Import this GitHub repository in Vercel. The committed vercel.json selects Vite and builds only the web assets; api/moon-commentary.ts serves the existing validated Express advisory as a serverless function. No API key or environment secrets are required. The standalone npm start deployment continues to work.
